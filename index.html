@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My first page</title>
+    <link rel="icon" href="icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <meta name="author" content="lorem" />
+    <meta name="description" content="subscribe to lorem" />
+  </head>
+  <body>
+    <header>
+      <h1>Hello world!</h1>
+      <hr />
+      <nav aria-label="primary-navigation">
+        <ul>
+          <li>
+            <a href="#ch1">chapter 1</a>
+          </li>
+          <li>
+            <a href="#ch2">chapter 2</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <img
+        src="./img/tes.png"
+        alt="my pic"
+        title="Tesla"
+        width="200"
+        height="100"
+      />
+      <figure>
+        <figcaption>Elon Musk owner</figcaption>
+        <img
+          src="./img/mus.png"
+          alt="musk"
+          title="Tesla owner"
+          width="200"
+          height="100"
+          loading="lazy"
+        />
+      </figure>
+      <figure>
+        <figcaption>html code example:</figcaption>
+        <code>&lt;h1&gt;hello&lt;/h1&gt;</code>
+      </figure>
+      <hr />
+      <p>
+        <em>Lorem ipsum dolor sit amet consectetur</em> adipisicing elit.
+        <strong> corrupti quas,</strong> culpa quibusdam quidem debitis minima
+        at delectus quia suscipit dolor, magni ipsa laborum natus
+        praesentium.&nbsp; Eius enim tempora vel
+      </p>
+      <dl>
+        <dt><a href="https://www.youtube.com/watch?v=L7P68k8jWbI">shake</a></dt>
+        <dd>it is very healthy</dd>
+        <dt>learn Ai</dt>
+        <dd>Ai very important</dd>
+        <dt>block chain</dt>
+        <dd>block chain is coin purpose</dd>
+      </dl>
+      <hr />
+      <section id="ch1">
+        <h2><a href="about.html">about me!</a></h2>
+        <p>
+          hello,Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Asperiores corrupti quas, culpa quibusdam quidem debitis minima at
+          delectus quia suscipit dolor, magni ipsa laborum natus praesentium.
+          Eius enim tempora vel!
+        </p>
+        <hr />
+      </section>
+      <section id="ch2">
+        <h2><a href="about.html">chapter!</a></h2>
+        <p>Today new paper for the below</p>
+      </section>
+      <hr />
+      <aside>
+        <details>
+          <summary>
+            Guess the
+            <mark>number</mark>
+          </summary>
+        </details>
+        <p>I start the time 8pm</p>
+      </aside>
+      <br />
+      <table>
+        <caption>
+          My daily schedule
+        </caption>
+        <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th scope="col">Time</th>
+            <th scope="col">Activity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Morning</th>
+            <td>
+              <p>8am-9am</p>
+            </td>
+            <td>write code</td>
+          </tr>
+          <tr>
+            <th scope="row">Break</th>
+            <td>
+              <p>11am-12am</p>
+            </td>
+            <td>Lunch</td>
+          </tr>
+          <tr>
+            <th scope="row">Evening</th>
+            <td rowspan="2">All other time</td>
+            <td>sleep</td>
+          </tr>
+          <tr>
+            <th scope="row">Night</th>
+            <td>Free time</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Eat,sleep,code everyday</td>
+          </tr>
+        </tfoot>
+      </table>
+      <h3>subscribe the channel</h3>
+      <p>Hey that i was happy</p>
+      <!--Todo have to specify -->
+      <address>theni</address>
+      <hr />
+      <article id="contact">
+        <h2>contact me:</h2>
+        <p>i would like to here something</p>
+        <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+                <legend>personal info</legend>
+          <p>
+            <label for="firstName">firstName:</label>
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="enter the firstname"
+              autocomplete="on"
+              required="true"
+            />
+          </p>
+          <p>
+            <label for="lastName">lastName:</label>
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="enter the lastName"
+              autocomplete="on"
+              required
+            />
+          </p>
+          <p>
+            <label for="password">Password:</label>
+            <input
+              type="text"
+              name="Password"
+              id="password"
+              placeholder="enter the password"
+              autocomplete="on"
+              required
+            />
+          </p>
+          <p>
+            <label for="phone">phoneNo:</label>
+            <input
+              type="tel"
+              name="phoneNumber"
+              id="phone"
+              placeholder="+91"
+              autocomplete="on"
+              required
+              pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+            />
+          </p>
+          <p>
+            <label for="decade">Fav decade:</label>
+            <input
+              type="number"
+              name="decade"
+              id="decade"
+              min="1950"
+              max="2020"
+              value="1980"
+              step="10"
+            />
+          </p>
+          <p>
+            <label for="content">Fav content:</label>
+            <select name="content" id="content" multiple size="3">
+              <optgroup label="earn money">
+                <option value="frontend">Fronted</option>
+                <option value="backend">backend</option>
+              </optgroup>
+              <optgroup label="grow money">
+                <option value="ui">UI</option>
+                <option value="ai">AI</option>
+              </optgroup>
+              <optgroup label="give money">
+                <option value="blockchain" selected>BlockChain</option>
+                <option></option>
+                <option value="sharemarket">ShareMarket</option>
+              </optgroup>
+            </select>
+          </p>
+        </fieldset>
+          <!-- <p>
+            <label for="content">Fav content money:</label>
+            <input type="text" name="conetent" id="content" list="content-list">
+             <datalist id="content-list">
+                <option value="frontend">
+                <option value="backend">
+                <option value="ui">
+                <option value="ai">
+                <option value="blockchain"></option>   
+          </p> -->
+          <fieldset>
+            <legend>Fav food</legend>
+            <p>
+            <input type="checkbox" name="food" id="chicken" value="chicken">
+            <label for="chicken">Chicken</label>
+        </p>
+        <p>
+            <input type="checkbox" name="food" id="mutton" value="mutton">
+            <label id="mutton">Mutton</label>
+        </p>
+        <p>
+            <input type="checkbox" name="food" id="others" value="others">
+            <label id="others">Others</label>
+        </p>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Fav pet</legend>
+            <p>
+            <input type="checkbox" name="pet" id="dog" value="dog">
+            <label for="dog">Dog</label>
+        </p>
+        <p>
+            <input type="checkbox" name="pet" id="parrot" value="parrot">
+            <label id="parrot">parrot</label>
+        </p>
+        <p>
+            <input type="checkbox" name="pet" id="cat" value="cat">
+            <label id="cat">cat</label>
+        </p>
+           </fieldset>
+           <fieldset>
+            <legend>send me note</legend>
+            <label for="message">your message</label>
+            <p>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="type your message"></textarea>
+            </p>
+           </fieldset>
+         <button type="submit">Submit</button>
+         <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+         <button type="reset">Reset</button>
+
+        </form>
+      </article>
+      <hr />
+    </main>
+    <footer>
+      <p>
+        I learn from
+        <abbr title="Mozila developer network"
+          ><a href="https://developer.mozilla.org/">MDN</a></abbr
+        >
+        resources
+      </p>
+      &lt;&lt;&lt;&copy;Follow&gt;&gt;&gt;
+      <a href="#">Back to top</a>
+    </footer>
+  </body>
+</html>
